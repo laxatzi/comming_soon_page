@@ -1,7 +1,7 @@
 :root {
-  --primary:  #002E66;
-	--secondary: #cd9557;
-	--font: #fff;
+  --primary:  #003076;
+	--secondary: #1e9c39;
+	--light: #fffbec;
 }
 html {
 	height: 100%;
@@ -66,7 +66,7 @@ video {
 .social-icons ul li a {
         display: block;
         color: white;
-        background-color: var(--primary);
+        background-color: var(--secondary);
         border-radius: 100%;
         font-size: 2rem;
         line-height: 4rem;
@@ -75,7 +75,7 @@ video {
 			}
 
 .social-icons ul li a:hover {
-				background-color: var(--secondary);
+				background-color: var(--primary);
 			}
     
 
@@ -101,7 +101,7 @@ main {
 
 .main_heading,
 .main_p  {
-	color: white;
+	color: var(--primary);
 }
 
   .main_bg {
@@ -113,7 +113,7 @@ main {
     width: 100%;
     min-height: 35rem;
     height: 100%;
-		background-color: var(--secondary);
+		background-color: var(--light);
 		opacity: .5;
     transform: skewY(4deg);
     transform-origin: bottom right;
