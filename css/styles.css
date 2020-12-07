@@ -1,6 +1,7 @@
 :root {
   --primary:  #002E66;
-  --secondary: #cd9557;
+	--secondary: #cd9557;
+	--font: #fff;
 }
 html {
 	height: 100%;
@@ -17,7 +18,8 @@ body {
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	background:grey;
+	background: url('../image/code_on_screen.jpg')  var(--primary) no-repeat center center scroll;
+	background-size: cover;
 }
 
 h1,
@@ -52,13 +54,11 @@ video {
     margin-top: 2rem;
     width: 100%;
 		text-align: center;
-		border: 1px solid pink;
 		}
 .social-icons ul li {
       margin-left: 1rem;
       margin-right: 1rem;
 			display: inline-block;
-			border: 1px solid pink;
  }
 .social-icons ul li:last-child {
 	margin-bottom: 0;
@@ -78,16 +78,6 @@ video {
 				background-color: var(--secondary);
 			}
     
-  
-@media (pointer: coarse) and (hover: none) {
-  body {
-    background: url('../image/code_on_screen.jpg')  var(--primary) no-repeat center center scroll;
-    background-size: cover;
-  }
-  body video {
-    display: none;
-  }
-}
 
 .overlay {
   position: absolute;
@@ -100,4 +90,123 @@ video {
 	z-index: 1;
 	margin: 0;
 	padding: 0;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+	z-index: 2;
+}
+
+.main_heading,
+.main_p  {
+	color: white;
+}
+
+  .main_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 35rem;
+    height: 100%;
+		background-color: var(--secondary);
+		opacity: .5;
+    transform: skewY(4deg);
+    transform-origin: bottom right;
+  }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+			font-size: 1.2rem;
+		}
+
+    strong {
+        font-weight: 700;
+      }
+    
+    .input_group-newsletter input {
+        height: auto;
+        font-size: 1rem;
+        padding: 1rem;
+			}
+			
+    .input_group-newsletter button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1rem;
+      }
+
+
+@media (min-width: 768px) {
+
+  .social-icons {
+    margin: 0;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+		width: auto;
+	}
+
+  .social-icons  ul {
+      margin-top: 0;
+			width: auto;
+	}
+
+  .social-icons li {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+				margin-bottom: 2rem;
+	}
+
+  .social-icons li:last-child {
+          margin-bottom: 0;
+	}
+				
+  .social-icons a {
+        transition: all 0.2s ease-in-out;
+        font-size: 2rem;
+        line-height: 4rem;
+        height: 4rem;
+				width: 4rem;
+	}  
+	
+	.social-icons a:hover {
+        background-color: var(--primary);
+   }
+    
+	main {
+				height: 100%;
+				min-height: 0;
+				width: 40.5rem;
+				padding-bottom: 0;
+		}
+
+	.main_bg {
+					min-height: 0;
+					transform: skewX(-8deg);
+					transform-origin: top right;
+		}
+
+	.main_content {
+							padding-left: 3rem;
+							padding-right: 10rem;
+		}
+
+	h1 {
+			font-size: 3.5rem;
+		}
+							
+	p {
+			font-size: 1.3rem;
+		}     
+    
 }
