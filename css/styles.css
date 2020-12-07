@@ -3,7 +3,7 @@
   --secondary: #cd9557;
 }
 html {
-  height: 100%;
+	height: 100%;
 }
 
 body {
@@ -40,28 +40,37 @@ video {
   position: absolute;
   margin-bottom: 2rem;
   width: 100%;
-  z-index: 2;
-  ul {
+	z-index: 2;
+}
+.social-icons ul {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
-    > li {
+		}
+.social-icons ul li {
       margin-left: 1rem;
       margin-right: 1rem;
       display: inline-block;
-      > a {
+ }
+.social-icons ul li:last-child {
+	margin-bottom: 0;
+}
+.social-icons ul li a {
         display: block;
         color: white;
-        background-color: fade-out($primary, 0.2);
+        background-color: var(--primary);
         border-radius: 100%;
         font-size: 2rem;
         line-height: 4rem;
         height: 4rem;
         width: 4rem;
-      }
-    }
-  }
-}
+			}
+
+.social-icons ul li a:hover {
+				background-color: var(--secondary);
+			}
+    
+  
 @media (pointer: coarse) and (hover: none) {
   body {
     background: url('../image/code_on_screen.jpg')  var(--primary) no-repeat center center scroll;
@@ -78,7 +87,7 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:  var(--secondary);
+  background-color:  var(--primary);
   opacity: 0.7;
-  z-index: 1;
+	z-index: 1;
 }
