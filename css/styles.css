@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  color: var(--dark);
+  color: var(--light);
   font-family: 'Lora','Georgia', 'Times', serif ;
   font-weight: var(--normal_font);
   line-height: 145%;
@@ -34,6 +34,7 @@ body {
   background: url('../image/code_on_screen.jpg') var(--primary) no-repeat center center scroll;
   background-size: cover;
   height: 100%;
+  display: flex;
 }
 
 img {
@@ -107,8 +108,8 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--light);
-  opacity: 0.7;
+  background-color: var(--primary);
+  opacity: 0.8;
   z-index: 1;
 }
 
@@ -128,24 +129,37 @@ video {
   width: 100%;
   min-height: 35rem;
   height: 100%;
-  background-color: var(--primary);
-  opacity: .2;
+  background-color: var(--secondary);
+  opacity: .3;
   transform: skewY(4deg);
   transform-origin: bottom right;
 }
 
+.main_p {
+  margin-bottom: 20px;
+  padding: 20px;
+} 
+.input_group-newsletter {
+  display: flex;
+  flex-direction: column;
+}
 .input_group-newsletter input {
   height: auto;
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 1rem;
+
 }
 
 .input_group-newsletter button {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: var(--normal_font);
+  text-transform: capitalize;
   letter-spacing: 1px;
   padding: 1rem;
+  margin: .1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  border: 2px solid var(--light);
 }
 
 /* social */
@@ -171,7 +185,7 @@ video {
 .list-item > a {
   display: block;
   color: white;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   opacity: .8;
   border-radius: 100%;
   font-size: 2rem;
