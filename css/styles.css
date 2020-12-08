@@ -16,6 +16,7 @@ html {
    box-sizing: border-box;	
    background-color: transparent;
    font-size: 62.5%; 
+   height: 100%;
 }
 
 *, *::after, *::before {
@@ -30,6 +31,9 @@ body {
   font-weight: var(--normal_font);
   line-height: 145%;
   font-size: 1.8rem;
+  background: url('../image/code_on_screen.jpg') var(--primary) no-repeat center center scroll;
+  background-size: cover;
+  height: 100%;
 }
 
 img {
@@ -64,8 +68,6 @@ img {
     letter-spacing: 1px;
   
   }
-  
-
   
   h3 {
      font-size: 2.4rem;
@@ -127,6 +129,7 @@ video {
   min-height: 35rem;
   height: 100%;
   background-color: var(--primary);
+  opacity: .2;
   transform: skewY(4deg);
   transform-origin: bottom right;
 }
@@ -144,6 +147,40 @@ video {
   letter-spacing: 1px;
   padding: 1rem;
 }
+
+/* social */
+.social-icons {
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.list {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.list-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.list-item > a {
+  display: block;
+  color: white;
+  background-color: var(--primary);
+  opacity: .8;
+  border-radius: 100%;
+  font-size: 2rem;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+
 
 @media screen and (min-width: 768px){
   
@@ -172,5 +209,62 @@ video {
     padding-right: 10rem;
   }
 
+/* social */
+
+  .social-icons {
+    margin: 0;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: auto;
+  }
+
+  .list {
+    margin-top: 0;
+    width: auto;
+  }
+
+  .list-item {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .list > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .list-item > a {
+    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .list-item >  a:hover {
+    background-color: var(--primary);
+  }
+
+
+.btn-secondary {
+  background-color: var(--light);
+  border-color: var(--light);
 }
+
+.btn-secondary:active,
+.btn-secondary:focus, 
+.btn-secondary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.input {
+  font-weight: var(--normal_font);
+}
+  
+
+
+} /* end media*/
 
