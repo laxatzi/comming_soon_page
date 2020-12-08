@@ -131,13 +131,13 @@ video {
   transform-origin: bottom right;
 }
 
-.masthead-content .input-group-newsletter input {
+.input_group-newsletter input {
   height: auto;
   font-size: 1rem;
   padding: 1rem;
 }
 
-.masthead .masthead-content .input-group-newsletter button {
+.input_group-newsletter button {
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -146,6 +146,7 @@ video {
 }
 
 @media screen and (min-width: 768px){
+  
    h1,
    h2,
    h3 {
@@ -153,6 +154,23 @@ video {
        padding: 20px 0; 
   }
 
-  
+  .main {
+    height: 100%;
+    min-height: 0;
+    width: 40.5rem;
+    padding-bottom: 0;
+  }
+
+  .main_bg {
+    min-height: 0;
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+
+  .main_content {
+    padding-left: 3rem;
+    padding-right: 10rem;
+  }
 
 }
+
