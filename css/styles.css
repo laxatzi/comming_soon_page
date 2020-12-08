@@ -1,34 +1,33 @@
 
 /* ^BASIC */
 
-*, *::after, *::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
-
-
 /* VARIABLES */
 
 :root {
   --primary:  #003076;
 	--secondary: #1e9c39;
 	--light: #fffbec;
-	--dark: #000000;
+  --dark: #000000;
+  --normal_font: 400;
+  --bold_font: 600;
 }
   
 html {
-   box-sizing: border-box;
-   overflow: hidden;	
+   box-sizing: border-box;	
    background-color: transparent;
-   font-size: 62.5%;   
+   font-size: 62.5%; 
 }
 
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;  
+}
 
 body {
-  color: var(--primary);
+  color: var(--dark);
   font-family: 'Lora','Georgia', 'Times', serif ;
-  font-weight: 400;
+  font-weight: var(--normal_font);
   line-height: 145%;
   font-size: 1.8rem;
 }
@@ -45,7 +44,7 @@ img {
   h2,
   h3 {
     margin: .25rem 0 .35rem;
-    font-weight: 400;
+    font-weight: var(--bold_font);
     text-transform: uppercase;	
     padding: 10px 0; 	 
   }
@@ -78,13 +77,72 @@ img {
 
 a:link,
 a:visited {
- color:  #206BBC;
+ color:  var(--primary);
 }
 
 a:hover,
 a:focus{
-   color: #DC3545;
+   color: var(--secondary);
    text-decoration: none;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* look me up! */
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  z-index: 2;
+}
+
+.main_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background-color: var(--primary);
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+.masthead-content .input-group-newsletter input {
+  height: auto;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.masthead .masthead-content .input-group-newsletter button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px){
@@ -95,5 +153,6 @@ a:focus{
        padding: 20px 0; 
   }
 
+  
 
 }
