@@ -29,8 +29,8 @@ body {
   color: white;
   font-family: 'Lora','Georgia', 'Times', serif ;
   font-weight: var(--normal_font);
-  line-height: 145%;
-  font-size: 1.8rem;
+  line-height: 165%;
+  font-size: 2rem;
   background: url('../image/code_on_screen.jpg') var(--primary) no-repeat center center scroll;
   background-size: cover;
   height: 100%;
@@ -52,6 +52,7 @@ img {
     font-weight: var(--bold_font);
     text-transform: uppercase;	
     padding: 10px 0; 	 
+    text-align: center;
   }
      
  h1 {
@@ -130,22 +131,25 @@ video {
   min-height: 35rem;
   height: 100%;
   background-color: var(--secondary);
-  opacity: .3;
+  opacity: .2;
   transform: skewY(40deg);
   transform-origin: bottom right;
+  z-index: 1;
 }
 .main_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10vh;
 }
-.main_p {
+.main_pars {
   margin-bottom: 20px;
   padding: 20px;
 } 
 .input_group-newsletter {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .input_group-newsletter input {
   height: auto;
@@ -203,8 +207,6 @@ video {
 }
 
 
-
-
 @media screen and (min-width: 768px){
   
    h1,
@@ -214,11 +216,15 @@ video {
        padding: 20px 0; 
   }
 
+  h1 {
+    font-size: 6.4rem;
+  }
+
   .main {
     height: 100%;
     min-height: 0;
     width: 70.5rem;
-    padding-bottom: 0;
+    padding: 20px;
   }
 
   .main_bg {
@@ -227,9 +233,10 @@ video {
     transform-origin: top right;
   }
 
-  .main_content {
+  .main_pars {
     padding-left: 3rem;
     padding-right: 5rem;
+    font-size: 2.4rem;
   }
 
 /* social */
