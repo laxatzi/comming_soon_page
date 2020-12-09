@@ -34,8 +34,8 @@ body {
   background: url('../image/code_on_screen.jpg') var(--primary) no-repeat center center scroll;
   background-size: cover;
   height: 100%;
+  min-height: 80rem;
   display: flex;
-  justify-content: flex-end;
 }
 
 img {
@@ -104,7 +104,7 @@ video {
   z-index: 0;
 }
 
-.overlay {
+.main_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +115,7 @@ video {
   z-index: 1;
 }
 
-.main {
+.sec_overlay {
   position: relative;
   overflow: hidden;
   padding-bottom: 3rem;
@@ -131,7 +131,7 @@ video {
   padding: 20px;
 } */
 
-.main_bg {
+.sec_overlay-bg {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -232,14 +232,14 @@ video {
     padding-left: 20px;
   }
 
-  .main {
+  .sec_overlay {
     height: 100%;
     min-height: 0;
     width: 30.5rem;
     padding: 20px;
   }
 
-  .main_bg {
+  .sec_overlay-bg {
     min-height: 0;
     transform: skewX(-8deg);
     transform-origin: top right;
@@ -304,7 +304,7 @@ video {
 } /* end media*/
 
 @media screen and (min-width: 1100px){
-  .main {
+  .sec_overlay {
     width: 60%;
   }
 }
@@ -326,7 +326,7 @@ h1 {
   text-align: center;
 }
 
-.main {
+.sec_overlay {
   width: 85.5rem;
  
 }
