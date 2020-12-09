@@ -57,7 +57,7 @@ img {
      
  h1 {
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     word-spacing: 4px;
     line-height: 145%;
     letter-spacing: 1px;
@@ -134,23 +134,29 @@ video {
   opacity: .2;
   transform: skewY(40deg);
   transform-origin: bottom right;
-  z-index: 1;
 }
+
 .main_content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-top: 10vh;
+  z-index: 10;
+  
 }
+
 .main_pars {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   padding: 20px;
-} 
+}
+
 .input_group-newsletter {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
+
 .input_group-newsletter input {
   height: auto;
   font-size: 1.6rem;
@@ -197,10 +203,9 @@ video {
 .list-item > a {
   display: block;
   color: white;
-  background-color: var(--secondary);
   opacity: .8;
   border-radius: 100%;
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 4rem;
   height: 4rem;
   width: 4rem;
@@ -217,7 +222,7 @@ video {
   }
 
   h1 {
-    font-size: 6.4rem;
+    font-size: 5rem;
   }
 
   .main {
@@ -267,8 +272,7 @@ video {
 
   .list-item > a {
     transition: all 0.2s ease-in-out;
-    font-size: 3rem;
-    line-height: 7rem;
+    font-size: 6rem;
     height: 6rem;
     width: 6rem;
   }
@@ -298,3 +302,8 @@ video {
 
 } /* end media*/
 
+@media screen and (min-width: 968px){
+  h1 {
+    font-size: 6.4rem;
+  }
+}
