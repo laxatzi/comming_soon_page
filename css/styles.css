@@ -235,10 +235,8 @@ main {
   }
 
   .sec_overlay {
-    height: 100%;
-    min-height: 0;
-    width: 30%;
-    padding: 20px;
+    width: 40%;
+    left: -10%;
   }
 
   .sec_overlay-bg {
@@ -248,25 +246,26 @@ main {
   }
   
 
-
 } /* end media*/
 
 @media screen and (min-width: 1250px){
   
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
 
+  .input_group-newsletter input,
+  .input_group-newsletter button {
+    text-align: center;
+  }
 
-h1 {
-  font-size: 5rem;
-  text-align: center;
-}
-
-.input_group-newsletter input,
-.input_group-newsletter button {
-  text-align: center;
-}
-
-main {
- align-items: center;
-}
-
+  main {
+  align-items: center;
+  }
+  
+  .sec_overlay {
+    width: 40%;
+    left: -30%;
+  }
 }
