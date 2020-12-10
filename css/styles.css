@@ -14,7 +14,6 @@
   
 html {
    box-sizing: border-box;	
-   background-color: transparent;
    font-size: 62.5%; 
    height: 100%;
 }
@@ -31,7 +30,7 @@ body {
   font-weight: var(--normal_font);
   line-height: 165%;
   font-size: 2rem;
-  background: url('../image/code_on_screen.jpg') var(--primary) no-repeat center center scroll;
+  background: var(--primary) url('../image/code_on_screen.jpg') center center no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 80rem;
@@ -123,13 +122,8 @@ video {
   height: 100%;
   min-height: 0;
   padding: 20px;
+  width: 5rem;
 }
-/* .main {
-  height: 100%;
-  min-height: 0;
-  width: 35.5rem;
-  padding: 20px;
-} */
 
 .sec_overlay-bg {
   position: absolute;
@@ -141,8 +135,6 @@ video {
   height: 100%;
   background-color: var(--secondary);
   opacity: .2;
-  transform: skewY(10deg);
-  transform-origin: bottom right;
 }
 
 main {
@@ -235,7 +227,7 @@ main {
   .sec_overlay {
     height: 100%;
     min-height: 0;
-    width: 30.5rem;
+    width: 20.5rem;
     padding: 20px;
   }
 
@@ -303,13 +295,6 @@ main {
 
 } /* end media*/
 
-@media screen and (min-width: 1100px){
-  .sec_overlay {
-    width: 60%;
-  }
-}
-/* end media */
-
 @media screen and (min-width: 1250px){
   
  .main_content {
@@ -327,7 +312,7 @@ h1 {
 }
 
 .sec_overlay {
-  width: 85.5rem;
+  width: 55.5rem;
  
 }
 
