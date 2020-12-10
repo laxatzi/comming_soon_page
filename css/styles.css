@@ -35,6 +35,7 @@ body {
   height: 100%;
   min-height: 80rem;
   display: flex;
+  justify-content: flex-end;
 }
 
 img {
@@ -143,11 +144,7 @@ main {
   padding: 20px;
   margin-top: 5vh;
   z-index: 3;
-  border:1px solid yellow;
-}
-
-.main_content {
-  border:1px solid green;
+  min-width: 40rem;
 }
 
 .main_pars {
@@ -162,7 +159,7 @@ main {
 .input_group-newsletter {
   display: flex;
   width: 100%;
- 
+  margin-left: 20px;
 }
 
 .input_group-newsletter input {
@@ -240,7 +237,7 @@ main {
   .sec_overlay {
     height: 100%;
     min-height: 0;
-    width: 20.5rem;
+    width: 30%;
     padding: 20px;
   }
 
@@ -256,9 +253,7 @@ main {
 
 @media screen and (min-width: 1250px){
   
- .main_content {
-   width: 50%; 
- }
+
 
 h1 {
   font-size: 5rem;
@@ -270,9 +265,8 @@ h1 {
   text-align: center;
 }
 
-.sec_overlay {
-  width: 55.5rem;
- 
+main {
+ align-items: center;
 }
 
 }
